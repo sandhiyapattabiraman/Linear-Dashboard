@@ -1,12 +1,13 @@
 import { HiAdjustmentsHorizontal } from "react-icons/hi2";
 import { IoFilter } from "react-icons/io5";
-
+import React, { useState, useRef } from "react";
+import { createPortal } from "react-dom";
 
 
 function Inbox() {
     return (
         <>
-            <div className="py-2 px-2  w-full h-full">
+            <div className="py-2 px-2 relative z-0 w-full h-full">
                 <div className=" h-full flex  border-1 border-zinc-800 rounded-sm bg-zinc-950">
                     <div className="w-[44%] border-r-1 border-zinc-800 ">
                         <div className=" py-2 px-4 border-b-1 border-zinc-800 flex justify-between items-center">

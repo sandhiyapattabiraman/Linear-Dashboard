@@ -7,7 +7,7 @@ import Inbox from './pages/Inbox'
 import MyIssues from './pages/MyIssues'
 import Views2 from './pages/Views2'
 import Projects2 from './pages/Projects2'
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Navigate } from "react-router-dom";
 
 
 function App() {
@@ -18,6 +18,7 @@ function App() {
           <SideBar/>
           <div className="flex-1">
             <Routes>
+              <Route path="/" element={<Navigate to="/issues" replace />} />
               <Route path="/projects" element={<Project />} />
               <Route path="/views" element={<View />} />
               <Route path="/myissues" element={<MyIssues />} />

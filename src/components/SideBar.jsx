@@ -85,7 +85,7 @@ function SideBar() {
 
             <div
               ref={sidebarRef}
-              className="h-screen pt-4 pb-2 flex flex-col justify-between relative transition-all duration-200"
+              className="h-screen pt-4 pb-2 flex flex-col justify-between relative overflow-visible transition-all duration-200"
               style={{
                 width: collapsed ? "0px" : `${sidebarWidth}px`,
                 minWidth: collapsed ? "0px" : "60px",
